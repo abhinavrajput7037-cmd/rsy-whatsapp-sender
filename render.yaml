@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: rsy-whatsapp-sender-2
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: API_SECRET
+        value: rsybattle_wa_2024
+      - key: NODE_ENV
+        value: production
